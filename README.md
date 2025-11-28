@@ -60,6 +60,8 @@ Efficient-Parameter Finetuning Pipeline Project contributing to the Aperture LLM
 
 **Action Points**
 - [ ] Write it up and send it to Immanol
+- [ ] Test Recipe Repo on smaller Apertus model
+  - [ ] See what it does
 
 **References / Needed Resources**
 - [ ] [Apertus](https://arxiv.org/pdf/2509.14233)

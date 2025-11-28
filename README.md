@@ -17,6 +17,7 @@ Efficient-Parameter Finetuning Pipeline Project contributing to the Aperture LLM
 - [x] Decide on the dataset and benchmarks
 - [x] Structure of the project
 - [ ] Prepare it
+  - [ ] Make sure to finetune on all sub-combinations of OpenMathInstruct
 
 
 **Week 2 (till 7.12.)**
@@ -44,8 +45,9 @@ Efficient-Parameter Finetuning Pipeline Project contributing to the Aperture LLM
 # Meeting 28 Nov
 **Selecting finetuning direction.**
 - Finetuning on English-descripted Math problems and benchmark on multiple languages.
-- Look at the language distribution of the pre-training data and select: (English, Russian, Mandarin Chinese, French, German).
-- Choose models to compare to (problably: Qwen, DeepSeek, GPT, Llama)
+- We have 5 sizes for LoRA finetuning from the OpenMathInstruct: 1M, 3M, 5M, 15M to follow the structure of the paper
+- For benchamrk, look at the language distribution of the pre-training data and select: (English, Russian, Mandarin Chinese, French, German).
+- Choose models to compare to (problably: Qwen, DeepSeek, GPT, Llama), probably based on the benchamrks paperes
   - baseline will probably show that Apertus is not reaching other sota models in math bmarks.
   - optional: _ablation on where the multilingual gain comes from_ (finetuned in eng only, vs all lang)
   - we want to show that small finetuning can bring close enough and eventually beat them (if not english, then the other underrepresented languages)
@@ -54,7 +56,8 @@ Efficient-Parameter Finetuning Pipeline Project contributing to the Aperture LLM
 - Select finetuning dataset, such that it's in English
 - !! Not similar, overlapping with benchmarking task sets
   - First, fix dataset (-> NVIDIA OpenMathInstruct-2)
-  - Second, fit benchmark sets, can be done later
+    - Finetune on all sub-combinations of OpenMathInstruct   
+  - Second, fit benchmark sets, can be done later -> LM Evaluation Harness
   - Cross-refernce with Apertus math SFT datasets. Avoid.
 - Make sure we translate the appropriate benchmarks into selected languages
 

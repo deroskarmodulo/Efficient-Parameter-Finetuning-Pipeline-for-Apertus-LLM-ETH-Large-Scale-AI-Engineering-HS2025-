@@ -27,6 +27,7 @@ Efficient-Parameter Finetuning Pipeline Project contributing to the Aperture LLM
 - [ ] Clean Code and Repo
 
 ---
+# Initial Meeting
 
 **Action Steps:**
 - [x] Each person suggests 3 datasets with clear idea of task for benchmarking/evaluation

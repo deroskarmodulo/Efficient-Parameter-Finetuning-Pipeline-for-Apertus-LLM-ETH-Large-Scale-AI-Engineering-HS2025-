@@ -17,11 +17,17 @@ Efficient-Parameter Finetuning Pipeline Project contributing to the Aperture LLM
 - [x] Decide on the dataset and benchmarks
 - [x] Structure of the project
 - [ ] Prepare it
+
+
 **Week 2 (till 7.12.)**
 - [ ] Actual Execution
+
+
 **Week 3 (till 14.12)**
 - [ ] Benchmarking
 - [ ] Evaluation
+
+
 **Final Push (till 19.12. == DEADLINE)**
 - [ ] Write Report
 - [ ] Clean Code and Repo

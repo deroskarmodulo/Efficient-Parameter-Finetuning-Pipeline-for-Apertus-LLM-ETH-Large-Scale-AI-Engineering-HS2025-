@@ -12,15 +12,10 @@ Efficient-Parameter Finetuning Pipeline Project contributing to the Aperture LLM
 
 ---
 
-**Action Steps:**
-
-- [ ] Each person suggests 3 datasets with clear idea of task for benchmarking/evaluation
-- [ ] *Take a look at how the LoRA-based FT works.*
-
 **Timeline:**
 **Week 1 (till 30.11.)**
-- [ ] Decide on the dataset and benchmarks
-- [ ] Structure of the project
+- [x] Decide on the dataset and benchmarks
+- [x] Structure of the project
 - [ ] Prepare it
 **Week 2 (till 7.12.)**
 - [ ] Actual Execution
@@ -33,9 +28,14 @@ Efficient-Parameter Finetuning Pipeline Project contributing to the Aperture LLM
 
 ---
 
-# Meeting 28 Nov
-Selecting finetuning direction.
+**Action Steps:**
+- [x] Each person suggests 3 datasets with clear idea of task for benchmarking/evaluation
+- [ ] *Take a look at how the LoRA-based FT works.*
 
+---
+
+# Meeting 28 Nov
+**Selecting finetuning direction.**
 - Finetuning on English-descripted Math problems and benchmark on multiple languages.
 - Look at the language distribution of the pre-training data and select: (English, Russian, Mandarin Chinese, French, German).
 - Choose models to compare to (problably: Qwen, DeepSeek, GPT, Llama)
@@ -43,7 +43,7 @@ Selecting finetuning direction.
   - optional: _ablation on where the multilingual gain comes from_ (finetuned in eng only, vs all lang)
   - we want to show that small finetuning can bring close enough and eventually beat them (if not english, then the other underrepresented languages)
 
-Constraints
+**Constraints**
 - Select finetuning dataset, such that it's in English
 - !! Not similar, overlapping with benchmarking task sets
   - First, fix dataset (-> NVIDIA OpenMathInstruct-2)
@@ -51,10 +51,10 @@ Constraints
   - Cross-refernce with Apertus math SFT datasets. Avoid.
 - Make sure we translate the appropriate benchmarks into selected languages
 
-Action Points
-- [ ] write up and send Imanol
+**Action Points**
+- [ ] Write it up and send it to Immanol
 
-References / Needed Resources
+**References / Needed Resources**
 - [ ] [Apertus](https://arxiv.org/pdf/2509.14233)
 - [ ] [OpenMathInstruct-2](https://arxiv.org/pdf/2410.01560?)
 - [ ] [LM - Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks)

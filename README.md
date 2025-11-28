@@ -4,7 +4,7 @@ Efficient-Parameter Finetuning Pipeline Project contributing to the Aperture LLM
 
 **Necessary Steps:**
 
-- [ ] Dataset -> Domain
+- [x] Dataset -> Domain
 - [ ] Tokenize using Apertus tokenizer
 - [ ] Plug LoRA-like Adapter
 - [ ] Finetune
@@ -30,3 +30,34 @@ Efficient-Parameter Finetuning Pipeline Project contributing to the Aperture LLM
 **Final Push (till 19.12. == DEADLINE)**
 - [ ] Write Report
 - [ ] Clean Code and Repo
+
+---
+
+# Meeting 28 Nov
+Selecting finetuning direction.
+
+- Finetuning on English-descripted Math problems and benchmark on multiple languages.
+- Look at the language distribution of the pre-training data and select: (English, Russian, Mandarin Chinese, French, German).
+- Choose models to compare to (problably: Qwen, DeepSeek, GPT, Llama)
+  - baseline will probably show that Apertus is not reaching other sota models in math bmarks.
+  - optional: _ablation on where the multilingual gain comes from_ (finetuned in eng only, vs all lang)
+  - we want to show that small finetuning can bring close enough and eventually beat them (if not english, then the other underrepresented languages)
+
+Constraints
+- Select finetuning dataset, such that it's in English
+- !! Not similar, overlapping with benchmarking task sets
+  - First, fix dataset (-> NVIDIA OpenMathInstruct-2)
+  - Second, fit benchmark sets, can be done later
+  - Cross-refernce with Apertus math SFT datasets. Avoid.
+- Make sure we translate the appropriate benchmarks into selected languages
+
+Action Points
+- [ ] write up and send Imanol
+
+References / Needed Resources
+- [ ] [Apertus](https://arxiv.org/pdf/2509.14233)
+- [ ] [OpenMathInstruct-2](https://arxiv.org/pdf/2410.01560?)
+- [ ] [LM - Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks)
+- [ ] [Finetuning Recipe Repo](https://github.com/swiss-ai/apertus-finetuning-recipes/tree/main)
+
+ 
